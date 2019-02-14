@@ -180,7 +180,7 @@ cask "numi"
 cask "sublime-text"
 cask "the-unarchiver"
 cask "transmission"
-cask "vlc"
+cask "vlc"`
 cask "signal"
 cask "setapp"
 cask "visual-studio-code"
