@@ -1,0 +1,107 @@
+Host 172.16.208.*
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+Host 172.17.208.*
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+Host 172.16.196.*
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+Host azathoth
+	Hostname 10.8.23.3
+
+Host generator
+	Hostname 34.227.112.43
+	User ubuntu
+	Port 42023
+	IdentityFile ~/Dropbox/PanadaData/aws/generatorkp.pem
+
+Host gitgen
+	Hostname 54.85.146.234
+	User git
+	Port 42023
+
+Host maya
+        Hostname 10.8.23.4
+	Protocol 2
+        Compression yes
+        ForwardX11 yes
+        Hostname 192.168.23.2
+        User kazamatzuri
+        IdentityFile ~/.ssh/id_rsa
+
+Host n2n-orig
+        Protocol 2
+        Compression yes
+        Port 42023
+        ForwardX11 yes
+        Hostname 88.198.107.94
+        User kazamatzuri
+
+
+Host pinky
+        Protocol 2
+        Compression yes
+        Port 42023
+#       ForwardX11 yes
+        Hostname 80.244.246.222
+#        Hostname 79.140.38.181
+        User kazamatzuri
+
+Host track
+        Protocol 2
+        Compression yes
+        Port 42023
+#       ForwardX11 yes
+        Hostname track.flightmare.net
+        User kazamatzuri
+
+Host trick
+        Protocol 2
+        Compression yes
+        Port 42023
+#       ForwardX11 yes
+        Hostname trick.flightmare.net
+        User root
+
+Host tick
+        Protocol 2
+        Compression yes
+        Port 42023
+#       ForwardX11 yes
+        Hostname tick.flightmare.net
+	User root
+
+Host wast
+	User kazamatzuri
+	Compression yes
+	Hostname grid.nerd2nerd.org
+	#Hostname 80.244.241.201
+	Port 22222
+
+Host wastv6
+	User kazamatzuri
+	Compression yes
+	Hostname gridv6.nerd2nerd.org
+	Port 22
+
+Host vpn
+	User root
+	Hostname 158.69.218.124
+	Port 22
+
+Host lx6
+	User fhaupt
+
+Host mail
+	User root
+	Hostname 54.39.144.35
+	Port 22
+Host collab
+    User root
+    Hostname collab.iscinternal.com
+    Port 22
+
