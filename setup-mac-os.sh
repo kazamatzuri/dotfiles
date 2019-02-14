@@ -14,13 +14,12 @@ main() {
     # Changing default shell to Fish
     change_shell_to_fish
     # Installing pip packages so that setup_symlinks can setup the symlinks
-    install_pip_packages
+    install_appstore_apps
+    #install_pip_packages
     # Installing yarn packages
     install_yarn_packages
     # Setting up symlinks so that setup_vim can install all plugins
     setup_symlinks
-    # Setting up Vim
-    setup_vim
     # Setting up tmux
     setup_tmux
     # Update /etc/hosts
@@ -51,7 +50,7 @@ function install_homebrew() {
     if hash brew 2>/dev/null; then
         success "Homebrew already exists"
     else
-url=https://raw.githubusercontent.com/Sajjadhosn/dotfiles/master/installers/homebrew_installer
+url=https://raw.githubusercontent.com/kazamatzuri/dotfiles/master/installers/homebrew_installer
         if /usr/bin/ruby -e "$(curl -fsSL ${url})"; then
             success "Homebrew installation succeeded"
         else
@@ -167,9 +166,9 @@ function clone_dotfiles_repo() {
         pull_latest $DOTFILES_REPO
         success "Pull successful in ${DOTFILES_REPO} repository"
     else
-        url=https://github.com/Sajjadhosn/dotfiles.git
+        url=https://github.com/kazamatzuri/dotfiles.git
         if git clone "$url" $DOTFILES_REPO && \
-           git remote set-url origin git@github.com:Sajjadhosn/dotfiles.git; then
+           git remote set-url origin git@github.com:kazamatzuri/dotfiles.git; then
             success "Dotfiles repository cloned into ${DOTFILES_REPO}"
         else
             error "Dotfiles repository cloning failed"
@@ -213,6 +212,85 @@ function setup_vim() {
     success "vim successfully setup"
 }
 
+function install_appstore_apps() {
+    info "installing stuff"
+    # 1Password
+    mas install 443987910
+
+    # Acorn
+    mas install 1019272813
+
+    # Bear
+    mas install 1091189122
+
+    # DaisyDisk
+    mas install 411643860
+
+    # Keynote
+    mas install 409183694
+
+    # Kindle
+    mas install 405399194
+
+    # Medis
+    mas install 1063631769
+
+    # MoneyWell
+    mas install 404246493
+
+    # Moom
+    mas install 419330170
+
+    # Numbers
+    mas install 409203825
+
+    # Pages
+    mas install 409201541
+
+    # Slack
+    mas install 803453959
+
+    # WiFi Explorer
+    mas install 494803304
+
+    #Paprika Recipe Manager 3 (3.3.4) 
+    mas install 1303222628
+
+    #Cathode (2.4.1) 
+    mas install 499233976
+
+    #Cyberduck (6.9.2) 
+    mas install 409222199
+
+    #JSON Helper (1.07) 
+    mas install 453114608
+
+    #Trello (2.10.8) 
+    mas install 1278508951
+
+    #Telegram (4.9.5) 
+    mas install 747648890
+
+    #Twitter (4.3.2) 
+    mas install 409789998
+
+    #iBooks Author (2.6.1) 
+    mas install 490152466
+
+    #Xcode (10.1) 
+    mas install 497799835
+
+    #SimpleMind Lite (1.22.0) 
+    mas install 439654198
+
+    #Microsoft Remote Desktop (10.2.7) 
+    mas install 1295203466
+
+    #Asset Catalog Creator (3.4) 
+    mas install 866571115
+
+}
+
 function setup_tmux() {
     info "Setting up tmux"
     substep "Installing tpm"
@@ -252,8 +330,6 @@ function setup_symlinks() {
     symlink "git" ${DOTFILES_REPO}/git/gitconfig ~/.gitconfig
     symlink "hammerspoon" ${DOTFILES_REPO}/hammerspoon ~/.hammerspoon
     symlink "iterm2" ${DOTFILES_REPO}/iTerm2/iterm_startup_script.scpt "${APPLICATION_SUPPORT}"/iTerm2/Scripts/AutoLaunch.scpt
-    symlink "karabiner" ${DOTFILES_REPO}/karabiner ~/.config/karabiner
-    symlink "powerline" ${DOTFILES_REPO}/powerline ${POWERLINE_ROOT_REPO}/powerline/config_files
     symlink "tmux" ${DOTFILES_REPO}/tmux/tmux.conf ~/.tmux.conf
     symlink "vim" ${DOTFILES_REPO}/vim/vimrc ~/.vimrc
 
