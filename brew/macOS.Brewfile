@@ -7,10 +7,11 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 
+
 ############################################################################
 # brew
 ############################################################################
-cask "java8"
+cask "java"
 cask "osxfuse"
 brew "ack"
 brew "adns"
