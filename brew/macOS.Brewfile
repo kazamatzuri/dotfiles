@@ -27,11 +27,10 @@ brew "cairo"
 brew "carthage"
 brew "check"
 brew "diff-so-fancy"
-brew "dirmngr"
 brew "dos2unix"
-
 brew "elixir"
 brew "encfs"
+brew "dockutil"
 brew "epstool"
 brew "erlang"
 brew "ffmpeg" # for being able to manipulate videos for example
