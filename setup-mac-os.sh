@@ -215,10 +215,7 @@ function install_appstore_apps() {
     info "installing stuff"
     info "1pass"
     # 1Password
-    mas install 443987910
-    info "acorn"
-    # Acorn
-    mas install 1019272813
+    mas install 1333542190
 
     info "bear"
     # Bear
