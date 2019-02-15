@@ -37,15 +37,6 @@ set --global --export fish_user_paths \
     /usr/local/opt/ruby/bin \
     $fish_user_paths
 
-############################################################################
-# Configuration for Powerline
-############################################################################
-set --global --export \
-    POWERLINE_ROOT_REPO /usr/local/lib/python3.7/site-packages
-set fish_function_path \
-    $fish_function_path "$POWERLINE_ROOT_REPO/powerline/bindings/fish"
-powerline-daemon --quiet
-powerline-setup
 
 ############################################################################
 # Configuration for Oh-My-Fish!

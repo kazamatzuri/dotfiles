@@ -170,7 +170,6 @@ cask "dash"
 cask "docker"
 cask "dropbox"
 cask "firefox"
-cask "font-fira-mono-for-powerline" # for iTerm2 powerline
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "iterm2"
@@ -186,4 +185,4 @@ cask "visual-studio-code"
 cask "openemu"
 cask "little-snitch"
 cask "hammerspoon"
-
+cask "font-awesome-terminal-fonts"
