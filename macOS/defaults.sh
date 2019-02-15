@@ -7,6 +7,25 @@ main() {
     configure_system
     configure_dock
     configure_finder
+    configure_dockicons
+}
+
+function configure_dockicons() {
+    dockutil --remove 'News' --allhomes
+    dockutil --remove 'Maps' --allhomes
+    dockutil --remove 'Photos' --allhomes
+    dockutil --remove 'FaceTime' --allhomes
+    dockutil --remove 'Siri' --allhomes
+    dockutil --remove 'Launchpad' --allhomes
+    dockutil --remove 'Contacts' --allhomes
+    dockutil --remove 'Reminders' --allhomes
+    dockutil --remove 'iTunes' --allhomes
+    dockutil --remove 'Notes' --allhomes
+    dockutil --remove 'Safari' --allhomes
+    dockutil --remove 'App Store' --allhomes
+    dockutil --remove 'Messages' --allhomes
+    dockutil --remove 'Calendar' --allhomes
+
 }
 
 function configure_plist_apps() {
