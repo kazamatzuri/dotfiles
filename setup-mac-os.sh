@@ -213,78 +213,94 @@ function setup_vim() {
 
 function install_appstore_apps() {
     info "installing stuff"
+    info "1pass"
     # 1Password
     mas install 443987910
-
+    info "acorn"
     # Acorn
     mas install 1019272813
 
+    info "bear"
     # Bear
     mas install 1091189122
 
+    info "daisydisk"
     # DaisyDisk
     mas install 411643860
 
+    info "keynote"
     # Keynote
     mas install 409183694
 
+    info "kindle"
     # Kindle
     mas install 405399194
 
+    info "medis"
     # Medis
     mas install 1063631769
 
+    info "moneywell"
     # MoneyWell
     mas install 404246493
 
+    info "moom"
     # Moom
     mas install 419330170
 
+    info "numbers"
     # Numbers
     mas install 409203825
 
+    info "pages"
     # Pages
     mas install 409201541
 
+    info "slack"
     # Slack
     mas install 803453959
 
-    # WiFi Explorer
-    mas install 494803304
-
+    info "paprika"
     #Paprika Recipe Manager 3 (3.3.4) 
     mas install 1303222628
 
+    info "cathode"
     #Cathode (2.4.1) 
     mas install 499233976
 
+    info "cyberduck"
     #Cyberduck (6.9.2) 
     mas install 409222199
 
-    #JSON Helper (1.07) 
-    mas install 453114608
-
+    info "trello"
     #Trello (2.10.8) 
     mas install 1278508951
 
+    info "telegram"
     #Telegram (4.9.5) 
     mas install 747648890
 
+    info "twitter"
     #Twitter (4.3.2) 
     mas install 409789998
 
+    info "ibooks"
     #iBooks Author (2.6.1) 
     mas install 490152466
 
+    info "xcode"
     #Xcode (10.1) 
     mas install 497799835
 
+    info "simplemind"
     #SimpleMind Lite (1.22.0) 
     mas install 439654198
 
+    info "microsoft remote desktop"
     #Microsoft Remote Desktop (10.2.7) 
     mas install 1295203466
 
+    info "asset cat"
     #Asset Catalog Creator (3.4) 
     mas install 866571115
 

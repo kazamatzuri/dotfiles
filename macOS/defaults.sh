@@ -21,6 +21,7 @@ function configure_wallpapers() {
     wget http://dynwalls.com/wallpapers/Jupiter.heic -O ~/wallpapers/Jupiter.heic
     wget http://dynwalls.com/wallpapers/Moon.heic -O ~/wallpapers/Moon.heic
     wget http://dynwalls.com/wallpapers/Earth.heic -O ~/wallpapers/Earth.heic
+    sudo open ~/personal/dotfiles/customscripts/wallpaper.app
 }
 
 function configure_dockicons() {
