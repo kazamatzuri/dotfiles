@@ -1,4 +1,3 @@
-1Password 7.app
 Adium.app
 Adobe
 Adobe Acrobat DC
@@ -10,7 +9,6 @@ Adobe Lightroom Classic CC
 Adobe Media Encoder CC 2019
 Adobe Photoshop CC 2019
 Adobe Premiere Pro CC 2019
-Alfred 3.app
 Amazon Photos.app
 Android Studio.app
 App Store.app
@@ -25,8 +23,6 @@ Calculator.app
 Calendar.app
 Cathode.app
 Chess.app
-Chromium.app
-Cisco
 Contacts.app
 Cyberduck.app
 DaisyDisk.app
@@ -34,8 +30,6 @@ Dash.app
 Dashboard.app
 Dictionary.app
 Discord.app
-Docker
-Docker.app
 Dogecoin-Qt.app
 Dropbox.app
 Eclipse.app

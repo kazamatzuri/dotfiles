@@ -8,6 +8,19 @@ main() {
     configure_dock
     configure_finder
     configure_dockicons
+    configure_wallpapers
+    configure_other
+}
+
+function configure_other() {
+    sudo open ~/personal/dotfiles/customscripts/darkmode.app
+}
+
+function configure_wallpapers() {
+    mkdir ~/wallpapers
+    wget http://dynwalls.com/wallpapers/Jupiter.heic -O ~/wallpapers/Jupiter.heic
+    wget http://dynwalls.com/wallpapers/Moon.heic -O ~/wallpapers/Moon.heic
+    wget http://dynwalls.com/wallpapers/Earth.heic -O ~/wallpapers/Earth.heic
 }
 
 function configure_dockicons() {
@@ -25,7 +38,8 @@ function configure_dockicons() {
     dockutil --remove 'App Store' --allhomes
     dockutil --remove 'Messages' --allhomes
     dockutil --remove 'Calendar' --allhomes
-
+    dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+    dockutil --add /Applications/Google\ Chrome.app/ --allhomes
 }
 
 function configure_plist_apps() {
