@@ -25,20 +25,7 @@ function configure_wallpapers() {
 }
 
 function configure_dockicons() {
-    dockutil --remove 'News' --allhomes
-    dockutil --remove 'Maps' --allhomes
-    dockutil --remove 'Photos' --allhomes
-    dockutil --remove 'FaceTime' --allhomes
-    dockutil --remove 'Siri' --allhomes
-    dockutil --remove 'Launchpad' --allhomes
-    dockutil --remove 'Contacts' --allhomes
-    dockutil --remove 'Reminders' --allhomes
-    dockutil --remove 'iTunes' --allhomes
-    dockutil --remove 'Notes' --allhomes
-    dockutil --remove 'Safari' --allhomes
-    dockutil --remove 'App Store' --allhomes
-    dockutil --remove 'Messages' --allhomes
-    dockutil --remove 'Calendar' --allhomes
+    dockutil --remove all --allhomes
     dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
     dockutil --add /Applications/Google\ Chrome.app/ --allhomes
 }
@@ -91,7 +78,7 @@ function configure_dock() {
     # Don’t show recent applications in Dock
     defaults write com.apple.dock show-recents -bool false
     # Set the icon size of Dock items to 36 pixels
-    defaults write com.apple.dock tilesize -int 36
+    defaults write com.apple.dock tilesize -int 48
     # Remove all (default) app icons from the Dock
     defaults write com.apple.dock persistent-apps -array
     defaults write com.apple.dock recent-apps -array
@@ -104,7 +91,7 @@ function configure_dock() {
     # Don’t show Dashboard as a Space
     defaults write com.apple.dock dashboard-in-overlay -bool true
     # Automatically hide and show the Dock
-    defaults write com.apple.dock autohide -bool true
+    defaults write com.apple.dock autohide -bool false
     # Remove the auto-hiding Dock delay
     defaults write com.apple.dock autohide-delay -float 0
     # Disable the Launchpad gesture (pinch with thumb and three fingers)

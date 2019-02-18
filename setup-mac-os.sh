@@ -213,9 +213,6 @@ function setup_vim() {
 
 function install_appstore_apps() {
     info "installing stuff"
-    info "1pass"
-    # 1Password
-    mas install 1333542190
 
     info "bear"
     # Bear
@@ -236,10 +233,6 @@ function install_appstore_apps() {
     info "medis"
     # Medis
     mas install 1063631769
-
-    info "moneywell"
-    # MoneyWell
-    mas install 404246493
 
     info "moom"
     # Moom
