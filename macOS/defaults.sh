@@ -58,7 +58,7 @@ function configure_system() {
     LOGOUT_HOOK_PATH=~/personal/dotfiles/macOS/logout_hook_script.sh
 
     # Disable Gatekeeper for getting rid of unknown developers error
-    sudo spctl --master-disable
+    #sudo spctl --master-disable  #nah, I don't think that's a general good idea for now.
     # Disable natural scrolling
     defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
     # Disable macOS startup chime sound
