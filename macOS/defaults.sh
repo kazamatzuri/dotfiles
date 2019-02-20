@@ -97,6 +97,9 @@ function configure_dock() {
     # Disable the Launchpad gesture (pinch with thumb and three fingers)
     defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
+    #put it to the right of the display (lower area is going to be ubar)
+    defaults write com.apple.dock orientation -string "right"
+
     ## Hot corners
     ## Possible values:
     ##  0: no-op
@@ -123,7 +126,7 @@ function configure_dock() {
 
 function configure_finder() {
     # Save screenshots to Downloads folder
-    defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+    defaults write com.apple.screencapture location -string "${HOME}/Desktop/screenshots"
     # Require password immediately after sleep or screen saver begins
     defaults write com.apple.screensaver askForPassword -int 1
     defaults write com.apple.screensaver askForPasswordDelay -int 0
