@@ -1,0 +1,2 @@
+#!/bin/bash
+cat ~/Private/cacert/pwds | grep -i $1

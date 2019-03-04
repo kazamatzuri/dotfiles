@@ -1,0 +1,9 @@
+#!/bin/zsh
+set -e
+youtube-dl -f 'bestvideo[ext=mp4]/best[ext=mp4]/best' -o 1.mp4 "$1"
+youtube-dl -f html5-audio-high -o 1.mp3 "$1"
+printf '\x00\x00' | dd of=1.mp4 bs=1 count=2 conv=notrunc
+echo "file '1.mp4'" >> 1.txt
+endstr=`echo $1|sed -e 's/https:\/\/coub.com\/view\///g'`
+ffmpeg -hide_banner -f concat -i 1.txt -i 1.mp3 -c copy -shortest -movflags faststart raw/"$endstr".mp4
+rm 1.mp4 1.mp3 1.txt

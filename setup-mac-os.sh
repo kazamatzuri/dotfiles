@@ -344,6 +344,11 @@ function setup_symlinks() {
     symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish ~/.config/fish/config.fish
     symlink "fish:oh_my_fish"  ${DOTFILES_REPO}/fish/oh_my_fish  ~/.config/omf
 
+    symlink "bin:c-dl" ${DOTFILES_REPO}/bin/c-dl ~/bin/c-dl
+    symlink "bin:gifenc.sh" ${DOTFILES_REPO}/bin/gifenc.sh ~/bin/gifenc.sh
+    symlink "bin:goiisformat.sh" ${DOTFILES_REPO}/bin/goiisformat.sh ~/bin/goiisformat.sh
+    symlink "bin:recodetomp3.sh" ${DOTFILES_REPO}/bin/recodetomp3.sh ~/bin/recodetomp3.sh
+    
     success "Symlinks successfully setup"
 }
 
