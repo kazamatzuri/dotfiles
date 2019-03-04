@@ -23,3 +23,9 @@
 ############################################################################
 [core]
 	autocrlf = input  # bit.ly/2RLLxed
+[commit]
+	gpgsign = true
+[user]
+	email = fabian@fabianhaupt.de
+	name = Fabian
+	signingkey = 5FA7CF89726A93963C040C5DB42FFF0C8423D95F
