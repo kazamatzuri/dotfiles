@@ -33,6 +33,7 @@ mac_homebrew_packages:
   - wget
   - highlight
   - terminal-notifier
+  - youtube-dl
   - htop-osx
   - httpie
   - postgresql
@@ -41,6 +42,7 @@ mac_homebrew_packages:
   - docker-clean
   - direnv
   - gpg
+  - heroku/brew/heroku
   # Top for docker containers
   - ctop
   # User-contributed docs for Unix commands
@@ -71,12 +73,14 @@ mac_cask_packages:
   - keepingyouawake  # maintained caffeinate wrapper
   - bestres  # quickly switch resolution
   # Utilities
+  - bettertouchtool
   - appcleaner
   - daisydisk
   # Docker
   - docker
   # chat
   - slack
+  - keybase
   - discord
   # Media/Music
   - spotify
