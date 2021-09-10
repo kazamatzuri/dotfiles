@@ -9,6 +9,7 @@
     - { role: node, tags: ["node"] }
     - { role: ruby, tags: ["ruby"] }
     - { role: hub, tags: ["hub"] }
+    - { role: zsh-autoenv, tags: ["zsh-autoenv"] }
     - { role: direnv, tags: ["direnv"] }
     - { role: rg, tags: ["rg"] }
     - { role: exa, tags: ["exa"] }
@@ -17,4 +18,5 @@
     - { role: tmux, tags: ["tmux"] }
     - { role: fzf, tags: ["fzf"] }
     - { role: kubernetes, tags: ["kubernetes"] }
+    - { role: jrnl, tags: ["jrnl"] }
     - { role: macos, tags: ["macos"], when: ansible_os_family == "Darwin" }
