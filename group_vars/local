@@ -39,6 +39,7 @@ mac_homebrew_packages:
   - redis
   - diff-so-fancy
   - docker-clean
+  - direnv
   - gpg
   # Top for docker containers
   - ctop
