@@ -8,7 +8,7 @@ dotfiles_user_home: "{{ '~' | expanduser }}"
 dotfiles_home: "{{dotfiles_user_home}}/dotfiles"
 
 # Name used in commit messages
-full_name: Fabian HAupt
+full_name: Fabian Haupt
 # Git
 # Github username
 git_user: kazamatzuri
