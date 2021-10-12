@@ -81,8 +81,6 @@ mac_cask_packages:
   # chat
   - slack
   - discord
-  # Video conferencing
-  - zoom
   # Media/Music
   - spotify
   - iina
