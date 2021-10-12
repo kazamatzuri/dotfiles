@@ -126,5 +126,4 @@ ruby_global_gems:
 # Especially useful when using tox
 pyenv_global_versions:
   - 3.9.7
-  - 3.8.6
-  - 3.6.9
+  - 3.8.6  
