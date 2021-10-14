@@ -11,10 +11,10 @@ dotfiles_home: "{{dotfiles_user_home}}/dotfiles"
 full_name: Fabian Haupt
 # Git
 # Github username
-git_user: kazamatzuri
+git_user: fh469w
 # If you use github, this should be the same as the email
 #  used on Github
-git_email: fabian@fabianhaupt.de
+git_email: fhaupt@wayfair.com
 
 # GPG Key ID used to sign git commits
 # See https://github.com/pstadler/keybase-gpg-github setup instructions
@@ -59,6 +59,8 @@ mac_homebrew_packages:
   - noti
   # For encrypting envvars in Travis
   - svn # needed for installing font-cousine
+  - gsort
+  - guniq
 
 # Mac Apps to be installed with homebrew-cask
 mac_cask_packages:
