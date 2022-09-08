@@ -34,7 +34,7 @@ install
 ```bash
 # Replace git url with your fork
 # NOTE: It is important that you clone to ~/dotfiles
-git clone https://github.com/YOU/dotfiles.git ~/dotfiles
+git clone https://github.com/kazamatzuri/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
