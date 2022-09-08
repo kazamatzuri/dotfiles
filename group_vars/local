@@ -73,8 +73,8 @@ mac_cask_packages:
   # Browsers
   - firefox
   # Display
-  - keepingyouawake # maintained caffeinate wrapper
-  - flux
+  - keepingyouawake  # maintained caffeinate wrapper
+  - bestres  # quickly switch resolution
   # Utilities
   - appcleaner
   - daisydisk
@@ -89,7 +89,7 @@ mac_cask_packages:
   # Images
   - imageoptim
   # Notetaking
-  - fsnotes
+  - obsidian
   - notion
   # Fonts
   - font-ubuntu
@@ -102,14 +102,14 @@ mac_cask_packages:
   - dash
   # Stay focused
   - selfcontrol
-  # Design
-  - sketch
   # REST client
   - insomnia
   # Markdown-based presentations
   - deckset
   # Screen captures and recording
   - cleanshot
+  # Email client
+  - mimestream
 
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
@@ -119,11 +119,8 @@ mac_mas_packages:
   - { "id": 412347921, "name": "OmmWriter" }
   - { "id": 402383384, "name": "Base - SQLite Editor" }
 
-ruby_global_gems:
-  - lunchy
-
 # Python versions to install with pyenv and set as global
 # Especially useful when using tox
 pyenv_global_versions:
-  - 3.9.7
-  - 3.8.6  
+  - 3.10.2
+  - 3.9.9
