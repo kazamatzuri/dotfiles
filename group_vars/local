@@ -59,16 +59,10 @@ mac_homebrew_packages:
   - noti
   # For encrypting envvars in Travis
   - svn # needed for installing font-cousine
-  - gsort
-  - guniq
   - ripgrep
 
 # Mac Apps to be installed with homebrew-cask
 mac_cask_packages:
-  # Password manager
-  - 1password
-  # Editor
-  - visual-studio-code
   # Backup/storage
   - dropbox
   # Browsers
@@ -111,6 +105,8 @@ mac_cask_packages:
   - cleanshot
   # Email client
   - mimestream
+  # termina
+  - iterm2
 
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
