@@ -2,7 +2,7 @@
 
 # Initialize homebrew
 if [[ $(uname -m) == 'arm64' ]]; then
-  eval $(/opt/homebrew/bin/brew shellenv)
+  eval $(/Users/fh469w/homebrew/bin/brew shellenv)
 fi
 
 # shortcut to this dotfiles path is $ZSH
