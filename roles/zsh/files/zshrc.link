@@ -107,4 +107,39 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 alias mamba="docker pull wayfair/mamba:latest && docker run -it --platform linux/amd64 --rm wayfair/mamba:latest"
 export MODULAR_HOME="/Users/fh469w/.modular"
-export PATH="/Users/fh469w/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export PATH="$PATH:/Users/fh469w/.modular/pkg/packages.modular.com_mojo/bin"
+
+
+eval "$(jenv init -)"
+
+# Added by Windsurf
+export PATH="/Users/fh469w/.codeium/windsurf/bin:$PATH"
+
+# Pyenv setup
+export PATH="$HOME/.pyenv/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  # Enable pyenv-virtualenv if available
+  if command -v pyenv-virtualenv-init > /dev/null; then
+    eval "$(pyenv virtualenv-init -)"
+  fi
+fi
+
+export PATH="/Users/fh469w/.rbenv/shims:${PATH}"
+export RBENV_SHELL=zsh
+command rbenv rehash 2>/dev/null
+rbenv() {
+  local command
+  command="${1:-}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "$(rbenv "sh-$command" "$@")";;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}
