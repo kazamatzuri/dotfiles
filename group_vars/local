@@ -33,7 +33,6 @@ mac_homebrew_packages:
   - wget
   - highlight
   - terminal-notifier
-  - youtube-dl
   - htop-osx
   - httpie
   - postgresql
@@ -51,31 +50,22 @@ mac_homebrew_packages:
   - wifi-password
   # Share tmux sessions
   - tmate
-  # README rendering
-  - grip
-  # Prose linting
-  - vale
   # For repeating commands
   - watch
-  # For displaying a notification when a command finishes
-  - noti
-  # For encrypting envvars in Travis
+
   - svn # needed for installing font-cousine
   - ripgrep
   - vi
 
 # Mac Apps to be installed with homebrew-cask
 mac_cask_packages:
-  # Backup/storage
-  - dropbox
+
   # Browsers
   - firefox
   # Display
-  - keepingyouawake  # maintained caffeinate wrapper
   - bestres  # quickly switch resolution
   # Utilities
   - appcleaner
-  - daisydisk
   # Docker
   - docker
   # chat
@@ -83,12 +73,10 @@ mac_cask_packages:
   - keybase
   - discord
   # Media/Music
-  - spotify
   - iina
   # Images
   - imageoptim
   # Notetaking
-  - obsidian
   - notion
   # Fonts
   - font-ubuntu
@@ -116,8 +104,6 @@ mac_cask_packages:
 # Use App IDs found with `mas search <name>`
 mac_mas_packages:
   # NOTE: the IDs can be found with `mas search <app name>`
-  - { "id": 585829637, "name": "Todoist" }
-  - { "id": 412347921, "name": "OmmWriter" }
   - { "id": 402383384, "name": "Base - SQLite Editor" }
 
 # Python versions to install with pyenv and set as global
